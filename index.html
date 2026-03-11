@@ -1,190 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rizal - Full Stack Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Rizal - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Rizal</div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <header>
+    <img src="profile.jpg" alt="Rizal" class="profile-img">
+    <h1>Rizal</h1>
+    <p>Web Developer | Workflow Automation Enthusiast</p>
+    <a href="cv.pdf" class="btn" download>Download CV</a>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm Rizal 👋</h1>
-                <p class="subtitle">Full Stack Developer | Problem Solver | Code Enthusiast</p>
-                <p class="description">I build beautiful, functional web applications that solve real-world problems.</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Saya seorang developer dengan pengalaman di PHP, MySQL, HTML/CSS, dan workflow automation (UiPath, n8n). Fokus pada solusi elegan dan premium.</p>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate full-stack developer with a love for creating elegant solutions to complex problems. With experience in modern web technologies, I'm committed to writing clean, maintainable code and delivering exceptional user experiences.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="projects">
+    <h2>Experience & Projects</h2>
+    <div class="card">Dental Clinic Website - Sistem registrasi pasien dengan database MySQL</div>
+    <div class="card">Workflow Automation - Integrasi Google Sheets dengan Telegram & WhatsApp</div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <h3>Project Name</h3>
-                    <p>Brief description of your project and what technologies you used.</p>
-                    <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="link">GitHub</a>
-                        <a href="#" class="link">Demo</a>
-                    </div>
-                </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: rizal@example.com</p>
+    <p>LinkedIn | GitHub | WhatsApp</p>
+  </section>
 
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Project Name</h3>
-                    <p>Brief description of your project and what technologies you used.</p>
-                    <div class="project-tags">
-                        <span class="tag">Vue.js</span>
-                        <span class="tag">Firebase</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="link">GitHub</a>
-                        <a href="#" class="link">Demo</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Project Name</h3>
-                    <p>Brief description of your project and what technologies you used.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">PostgreSQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="link">GitHub</a>
-                        <a href="#" class="link">Demo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>React / Vue.js</li>
-                        <li>HTML / CSS / JavaScript</li>
-                        <li>Tailwind CSS</li>
-                        <li>Responsive Design</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Node.js / Express</li>
-                        <li>Python / Django</li>
-                        <li>RESTful APIs</li>
-                        <li>Authentication</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <ul>
-                        <li>Git / GitHub</li>
-                        <li>Docker</li>
-                        <li>AWS / Netlify</li>
-                        <li>CI/CD Pipelines</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <ul>
-                        <li>MongoDB</li>
-                        <li>PostgreSQL</li>
-                        <li>MySQL</li>
-                        <li>Firebase</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Let's Connect</h2>
-            <p class="contact-subtitle">I'm always interested in hearing about new projects and opportunities.</p>
-            
-            <div class="contact-links">
-                <a href="https://github.com/rizalcoder90" class="contact-link" target="_blank">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="mailto:your.email@example.com" class="contact-link">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
-                </a>
-                <a href="https://linkedin.com" class="contact-link" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://twitter.com" class="contact-link" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                    <span>Twitter</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Rizal. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer>
+    <p>© 2026 Rizal. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
