@@ -1,35 +1,63 @@
-/* Portfolio styling */
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #fdfdfd;
+  color: #333;
 }
 
-.header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+header {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #1a1a1a;
 }
 
-.footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #35424a;
-    color: #ffffff;
+header p {
+  font-size: 18px;
+  color: #555;
 }
 
-.project {
-    background: white;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #ccc;
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #004aad;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #f1f1f1;
 }
